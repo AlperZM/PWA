@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myMuse</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="color-scheme" content="dark">
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+</head>
+<body>
+    <header>
+        <h1>myMuse Müzik Çalar</h1>
+    </header>
+
+    <main>
+        <section id="player-section" class="card">
+            <h2>Şu An Çalan</h2>
+            <div class="song-info">
+                <p id="current-song-title">Şarkı Adı Bilinmiyor</p>
+                <p id="current-song-duration">00:00 / 00:00</p>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 0%;"></div>
+            </div>
+            <div class="controls">
+                <button id="prev-button">Önceki</button>
+                <button id="play-pause-button">Oynat</button>
+                <button id="next-button">Sonraki</button>
+            </div>
+            <div class="playback-options">
+                <button id="shuffle-button">Karışık Çal</button>
+                <button id="repeat-button">Tekrarla</button>
+            </div>
+        </section>
+
+        <section id="playlist-section" class="card">
+            <h2>Çalma Listelerim</h2>
+            <div class="playlist-actions">
+                <button id="add-song-button">Cihazdan Şarkı Seç</button>
+                <button id="create-new-playlist-button">Yeni Liste Oluştur</button>
+            </div>
+            <ul id="song-list">
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 myMuse</p>
+    </footer>
+
+  <script src="script.js"></script> 
+</body>
+</html>
